@@ -2,10 +2,10 @@
 
 | Página | Rota | Descrição |
 |--------|------|-----------|
-| Login | `/login.html` | Autenticação (entrada principal) |
-| Registro | `/registro.html` | Criar nova conta |
-| Início | `/index.html` | Homepage com dica + adicionar atividades |
-| Dashboard | `/dashboard.html` | Gráficos e relatórios |
+| Login | `login.html` | Autenticação (entrada principal) |
+| Registro | `registro.html` | Criar nova conta |
+| Início | `index.html` | Homepage com dica + adicionar atividades |
+| Dashboard | `dashboard.html` | Gráficos e relatórios |
 | Calendário | `/calendario.html` | Gerenciar atividades por data |
 | Preferências | `/preferencias.html` | Configurações e modo escuro |
 | Perfil | `/perfil.html` | Dados e estatísticas do usuário |
