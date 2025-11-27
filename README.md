@@ -5,7 +5,7 @@ Uma aplicação web fullstack para gerenciamento inteligente de tempo e atividad
 Equipe
 
 ### Frontend
-- HTML5 - Estrutura semântica
+- Jesse Anthony Leonel da Silva Salviano - RA: 1362319106
 - CSS3 - Estilos responsivos com variáveis CSS
 - JavaScript Vanilla - Lógica de aplicação (sem frameworks)
 - Chart.js - Gráficos interativos
