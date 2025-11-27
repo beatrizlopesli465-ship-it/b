@@ -229,7 +229,7 @@ npm run build-storybook     Build estático do Storybook
 
 ### Proteção de Rotas
 - Todas as páginas verificam autenticação
-- Sem autenticação → redireciona para `/login.html`
+- Sem autenticação → redireciona para `login.html`
 
 ##  Dados & Modelos
 
