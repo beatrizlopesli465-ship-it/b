@@ -1,71 +1,15 @@
-### 4. Testes
+## 📄 Páginas da Aplicação
 
-```bash
-npm run cypress:open       # Cypress interativo
-npm run cypress:run        # Testes em modo headless
-npm run build-storybook    # Build estático do Storybook
-```
-
-#### Endpoints da API
-
-| Método | Endpoint | Descrição |
-|--------|----------|-----------|
-| GET | `/api/usuarios` | Lista todos os usuários |
-| POST | `/api/usuarios` | Cria novo usuário |
-| GET | `/api/atividades` | Lista atividades (filtrado por `usuario_id`) |
-| POST | `/api/atividades` | Cria nova atividade |
-| DELETE | `/api/atividades/<id>` | Deleta atividade |
-| GET | `/api/relatorio` | Gera relatório (filtrado por `usuario_id`) |
-
-```bash
-npm run storybook
-```
-Welcome to your new TanStack app! 
-
-### Getting Started
-
-To run this application:
-
-```bash
-npm install
-npm run start
-```
-
-# Building For Production
-
-To build this application for production:
-
-```bash
-npm run build
-```
-
-## Testing
-
-This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
-
-```bash
-npm run test
-```
-
-## Styling
-
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
-
-
-
-## Shadcn
-
-Add components using the latest version of [Shadcn](https://ui.shadcn.com/).
-
-```bash
-pnpx shadcn@latest add button
-```
-
-
-
-## Routing
-This project uses [TanStack Router](https://tanstack.com/router). The initial setup is a file based router. Which means that the routes are managed as files in `src/routes`.
-
+| Página | Rota | Descrição |
+|--------|------|-----------|
+| Login | `/login.html` | Autenticação (entrada principal) |
+| Registro | `/registro.html` | Criar nova conta |
+| Início | `/index.html` | Homepage com dica + adicionar atividades |
+| Dashboard | `/dashboard.html` | Gráficos e relatórios |
+| Calendário | `/calendario.html` | Gerenciar atividades por data |
+| Preferências | `/preferencias.html` | Configurações e modo escuro |
+| Perfil | `/perfil.html` | Dados e estatísticas do usuário |
+| Sobre | `/sobre.html` | Informações sobre TimeWise |
 ### Adding A Route
 
 To add a new route to your application just add another a new file in the `./src/routes` directory.
