@@ -10,7 +10,7 @@ Uma aplicação web fullstack para gerenciamento inteligente de tempo e atividad
 - Maria Waleska Otavio dos Santos Silv - RA: 1362415094
 - Victor Maximiano de Souza - RA: 1362415094
 
-Orientadores
+# Orientadores
 
 Frontend: HTML5 + CSS3 + JavaScript Vanilla | Backend: Python Flask | Testes: Cypress | Documentação: Storybook
 
