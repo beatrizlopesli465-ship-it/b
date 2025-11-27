@@ -1,3 +1,14 @@
+```javascript
+{
+  id: number,
+  nome: string,
+  horaInicio: "HH:MM",
+  horaFim: "HH:MM",
+  usuarioId: number,
+  dataSelecionada: "DD/MM/YYYY" (opcional),
+  dataCriacao: ISO8601
+}
+```
 ## 📄 Páginas da Aplicação
 
 | Página | Rota | Descrição |
