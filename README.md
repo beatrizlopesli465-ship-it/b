@@ -330,17 +330,17 @@ Visualize componentes em http://localhost:6006
 
 ##  Troubleshooting
 
-### "Não consigo fazer login"
+### Não consigo fazer login
 - Use: `user@gmail.com` / `1234`
 - Limpe o cache do navegador (Ctrl+Shift+Delete)
 - Verifique se LocalStorage está habilitado
 
-### "Backend não conecta"
+### Backend não conecta
 - Flask rodando em `http://localhost:5000`?
 - CORS habilitado? (Flask-CORS está instalado)
 - Developer Tools (F12) → Network → procure por erros
 
-### "Atividades desaparecem"
+### Atividades desaparecem
 - Verifique se LocalStorage foi limpo
 - Tente modo privado/anônimo
 - Recarregue a página
@@ -359,6 +359,6 @@ Visualize componentes em http://localhost:6006
 Licença ISC - veja o arquivo `LICENSE` para detalhes.
 
 ##  GitHub Pages
-[Link para a landing page do projeto]
+Link para a landing page do projeto
 (https://jesse-salviano.github.io/TimeWise/login.html)
 
