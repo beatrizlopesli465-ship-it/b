@@ -1,3 +1,10 @@
+### Categorias Automáticas
+Atividades são categorizadas automaticamente pelo nome:
+- Trabalho: contém "trabalho"
+- Estudos: contém "estudo", "aula", "aprender"
+- Exercício: contém "exercício", "esporte", "corrida"
+- Lazer: contém "lazer", "filme", "jogo"
+- Outros: qualquer outra atividade
 ```tsx
 {
   id: number,
