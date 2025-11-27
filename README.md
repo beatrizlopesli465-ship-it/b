@@ -1,19 +1,253 @@
-### Paleta de Cores
-```css
---primary-color: #00BCD4      / Cyan /
---secondary-color: #FF4444    / Red /
---success-color: #4CAF50      / Green /
---warning-color: #FFD700      / Gold /
---danger-color: #FF6B6B       / Red Light /
+# TimeWise  - Gerenciador Inteligente de Tempo
+
+Uma aplicação web fullstack para gerenciamento inteligente de tempo e atividades. Com interface mobile-first intuitiva, permite organizar atividades, visualizar estatísticas em tempo real e melhorar produtividade através de dicas e relatórios personalizados.
+
+##Equipe
+
+Jessé Anthony Leonel da Silva Salviano — RA: 1362319106
+Lacielton Felix Brito — RA: 1362520591
+Lucas Vinícius de Souza Soares — RA: 1362316926
+Luan Fonseca de Lima — RA: 1362318141
+Maria Waleska Otavio dos Santos Silva — RA: 1362312498
+Victor Maximiano de Souza — RA: 1362415094
+
+ Orientadores
+
+Frontend: HTML5 + CSS3 + JavaScript Vanilla | Backend: Python Flask | Testes: Cypress | Documentação: Storybook
+
+##  Funcionalidades
+
+### Autenticação & Perfil
+✅ Sistema de login/registro com validação  
+✅ Perfil do usuário com estatísticas pessoais  
+✅ Histórico de atividades por usuário  
+
+### Gerenciamento de Atividades
+✅ Adicionar/deletar atividades com horários  
+✅ Categorização automática (Trabalho, Estudos, Exercício, Lazer)  
+✅ Lista de atividades em tempo real  
+
+### Calendário & Planejamento
+✅ Calendário interativo mensal  
+✅ Marcar dias com atividades  
+✅ Adicionar atividades por data específica  
+
+### Dashboard & Relatórios
+✅ Gráficos em Doughnut Chart (Chart.js)  
+✅ Distribuição de tempo por categoria  
+✅ Dicas de produtividade variadas  
+
+### Personalização
+✅ Modo escuro/claro  
+✅ Preferências de horários (dormir/acordar)  
+✅ Controle de notificações  
+✅ Tutorial interativo para novos usuários  
+
+### Interface
+✅ Design mobile-first responsivo  
+✅ Navegação bottom-nav para dispositivos móveis  
+✅ Sidebar colapsível  
+✅ Paleta de cores moderna  
+
+## Tecnologias
+
+### Frontend
+- HTML5 - Estrutura semântica
+- CSS3 - Estilos responsivos com variáveis CSS
+- JavaScript Vanilla - Lógica de aplicação (sem frameworks)
+- Chart.js - Gráficos interativos
+- LocalStorage - Armazenamento persistente
+
+### Backend
+- Python 3.8+ - Linguagem servidor
+- Flask - Framework web minimalista
+- Flask-CORS - Suporte a requisições cross-origin
+- JSON - Formato de dados
+
+### Testes & Documentação
+- Cypress - Testes E2E automatizados
+- Storybook - Documentação de componentes
+- Vite - Build tool para otimização
+
+##  Estrutura do Projeto
+
+```bash
+## Estrutura do Projeto
+
 ```
-### Categorias Automáticas
-Atividades são categorizadas automaticamente pelo nome:
-- Trabalho: contém "trabalho"
-- Estudos: contém "estudo", "aula", "aprender"
-- Exercício: contém "exercício", "esporte", "corrida"
-- Lazer: contém "lazer", "filme", "jogo"
-- Outros: qualquer outra atividade
-```tsx
+timewise/
+├── .github/workflows/
+|    ├──static.yml
+├── .storybook/
+│   ├── main.js
+│   ├── preview.js
+├── cypress/e2e/
+│    ├── home.cy.js  
+├── src_stories/
+│   ├── assets/
+│   │   ├── accessibility.png
+│	├── accessibility.png
+│   │   ├── addon-library.png
+│   │   ├── assets.png
+│   │   ├── avi-file-image.avif
+│   │   ├── context.png
+│   │   ├── discord.png
+│   │   ├── figma-plugin.png
+│   │   ├── github.svg
+│   │   ├── share.png
+│   │   ├── styling.png
+│   │   ├── testing.png
+│   │   ├── theming.png
+│   │   └── youtube.svg
+│   ├── Configure.mdx.swl
+│   ├── Configure.mdx.swm
+│   ├── Configure.mdx.swp
+│   ├── Atividade.stories.js
+│   ├── button.css
+│   ├── Buttons.js
+│   ├── Buttons.stories.js
+│   ├── Configure.cypress.js
+│   ├── header.css
+│   ├── Headers.
+│   ├── Header.stories.js
+│   ├── page.css
+│   ├── Pages
+│   ├── Page.stories.js
+│  
+│
+├── .gitignore
+├── app.py
+├── calendario.html
+├── cypress.config.js
+├── dashboard.html
+├── index.html
+├── login.html
+├── package-lock.json
+├── package.json
+├── perfil.html
+├── preferencias.html
+├── README_CYPRESS_STORYBOOK.md
+├── README.md
+├── registro.html
+├── requirements.txt
+├── script.js
+├── sidebar.css
+├── sobre.html
+└── style.css
+```
+
+```
+
+##  Como Executar
+
+### Pré-requisitos
+- Node.js (npm ou yarn)
+- Python 3.8+ (pip)
+- Navegador moderno (Chrome, Firefox, Edge, Safari)
+
+### 1. Instalar Dependências
+
+Frontend (Node.js):
+\`\`\`bash
+npm install
+\`\`\`
+
+Backend (Python):
+\`\`\`bash
+pip install -r requirements.txt
+\`\`\`
+
+### 2. Iniciar o Backend (Flask)
+
+\`\`\`bash
+python app.py
+\`\`\`
+
+Backend rodará em: http://localhost:5000
+
+#### Endpoints da API
+
+| Método | Endpoint | Descrição |
+|--------|----------|-----------|
+| GET | `/api/usuarios` | Lista todos os usuários |
+| POST | `/api/usuarios` | Cria novo usuário |
+| GET | `/api/atividades` | Lista atividades (filtrado por `usuario_id`) |
+| POST | `/api/atividades` | Cria nova atividade |
+| DELETE | `/api/atividades/<id>` | Deleta atividade |
+| GET | `/api/relatorio` | Gera relatório (filtrado por `usuario_id`) |
+
+### 3. Iniciar o Frontend
+
+Desenvolvimento com Vite:
+```bash
+npm run dev
+```
+
+Frontend rodará em: http://localhost:5173 (ou http://localhost:8000)
+
+Storybook (Documentação de Componentes):
+```bash
+npm run storybook
+```
+
+Storybook rodará em: http://localhost:6006
+
+### 4. Testes
+
+```bash
+npm run cypress:open        Cypress interativo
+npm run cypress:run         Testes em modo headless
+npm run build-storybook     Build estático do Storybook
+```
+
+##  Páginas da Aplicação
+
+| Página | Rota | Descrição |
+|--------|------|-----------|
+| Login | `login.html` | Autenticação (entrada principal) |
+| Registro | `registro.html` | Criar nova conta |
+| Início | `index.html` | Homepage com dica + adicionar atividades |
+| Dashboard | `dashboard.html` | Gráficos e relatórios |
+| Calendário | `calendario.html` | Gerenciar atividades por data |
+| Preferências | `preferencias.html` | Configurações e modo escuro |
+| Perfil | `perfil.html` | Dados e estatísticas do usuário |
+| Sobre | `sobre.html` | Informações sobre TimeWise |
+
+##  Autenticação
+
+### Sistema de Login
+- Armazenamento: LocalStorage (frontend) + Backend Flask (opcional)
+- Dados de teste padrão:
+  - Email: `user@gmail.com`
+  - Senha: `1234`
+
+### Fluxo de Autenticação
+1. Usuário acessa `login.html`
+2. Preenche email/senha e envia formulário
+3. Sistema valida contra usuários registrados
+4. Se válido, armazena `usuarioAtual` no LocalStorage
+5. Redireciona para `index.html`
+
+### Proteção de Rotas
+- Todas as páginas verificam autenticação
+- Sem autenticação → redireciona para `/login.html`
+
+##  Dados & Modelos
+
+### Usuário
+```javascript
+{
+  id: number,
+  nome: string,
+  email: string,
+  password: string,
+  ocupacao: string,
+  dataCriacao: ISO8601
+}
+```
+
+### Atividade
+```javascript
 {
   id: number,
   nome: string,
@@ -24,268 +258,106 @@ Atividades são categorizadas automaticamente pelo nome:
   dataCriacao: ISO8601
 }
 ```
-## 📄 Páginas da Aplicação
 
-| Página | Rota | Descrição |
-|--------|------|-----------|
-| Login | `login.html` | Autenticação (entrada principal) |
-| Registro | `registro.html` | Criar nova conta |
-| Início | `index.html` | Homepage com dica + adicionar atividades |
-| Dashboard | `dashboard.html` | Gráficos e relatórios |
-| Calendário | `/calendario.html` | Gerenciar atividades por data |
-| Preferências | `/preferencias.html` | Configurações e modo escuro |
-| Perfil | `/perfil.html` | Dados e estatísticas do usuário |
-| Sobre | `/sobre.html` | Informações sobre TimeWise |
-### Adding A Route
+### Categorias Automáticas
+Atividades são categorizadas automaticamente pelo nome:
+- Trabalho: contém trabalho
+- Estudos: contém estudo, aula, aprender
+- Exercício: contém exercício, esporte, corrida
+- Lazer: contém lazer, "filme, jogo
+- Outros: qualquer outra atividade
 
-To add a new route to your application just add another a new file in the `./src/routes` directory.
+##  Design & Estilos
 
-TanStack will automatically generate the content of the route file for you.
-
-Now that you have two routes you can use a `Link` component to navigate between them.
-
-### Adding Links
-
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
-
-```tsx
-import { Link } from "@tanstack/react-router";
+### Paleta de Cores
+```css
+--primary-color: #00BCD4       Cyan 
+--secondary-color: #FF4444     Red 
+--success-color: #4CAF50       Green
+--warning-color: #FFD700       Gold 
+--danger-color: #FF6B6B        Red Light 
 ```
 
-Then anywhere in your JSX you can use it like so:
+### Layout
+- Mobile-first: Otimizado para dispositivos móveis
+- Flexbox: Layout principal
+- CSS Grid: Calendário
+- Responsivo: Adapta-se a desktops automaticamente
 
-```tsx
-<Link to="/about">About</Link>
-```
+##  Persistência de Dados
 
-This will create a link that will navigate to the `/about` route.
+Dados salvos no LocalStorage:
+- `usuarios` - Array de usuários registrados
+- `atividades` - Array de atividades
+- `usuarioAtual` - Usuário logado
+- `preferencias` - Configurações do usuário
+- `tutorialVisto` - Flag de tutorial
 
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
+Nota: Para persistência real, integre com banco de dados backend.
 
-### Using A Layout
+##  Testes
 
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you use the `<Outlet />` component.
-
-Here is an example layout that includes a header:
-
-```tsx
-import { Outlet, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-
-import { Link } from "@tanstack/react-router";
-
-export const Route = createRootRoute({
-  component: () => (
-    <>
-      <header>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-        </nav>
-      </header>
-      <Outlet />
-      <TanStackRouterDevtools />
-    </>
-  ),
-})
-```
-
-The `<TanStackRouterDevtools />` component is not required so you can remove it if you don't want it in your layout.
-
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-const peopleRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/people",
-  loader: async () => {
-    const response = await fetch("https://swapi.dev/api/people");
-    return response.json() as Promise<{
-      results: {
-        name: string;
-      }[];
-    }>;
-  },
-  component: () => {
-    const data = peopleRoute.useLoaderData();
-    return (
-      <ul>
-        {data.results.map((person) => (
-          <li key={person.name}>{person.name}</li>
-        ))}
-      </ul>
-    );
-  },
-});
-```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
-
-### React-Query
-
-React-Query is an excellent addition or alternative to route loading and integrating it into you application is a breeze.
-
-First add your dependencies:
-
+### Cypress E2E
 ```bash
-npm install @tanstack/react-query @tanstack/react-query-devtools
+# Terminal 1: inicie o servidor
+npm run dev
+
+# Terminal 2: abra Cypress
+npm run cypress:open
 ```
 
-Next we'll need to create a query client and provider. We recommend putting those in `main.tsx`.
+Testes em `cypress/e2e/home.cy.js`
 
-```tsx
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
-// ...
-
-const queryClient = new QueryClient();
-
-// ...
-
-if (!rootElement.innerHTML) {
-  const root = ReactDOM.createRoot(rootElement);
-
-  root.render(
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
-  );
-}
-```
-
-You can also add TanStack Query Devtools to the root route (optional).
-
-```tsx
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-
-const rootRoute = createRootRoute({
-  component: () => (
-    <>
-      <Outlet />
-      <ReactQueryDevtools buttonPosition="top-right" />
-      <TanStackRouterDevtools />
-    </>
-  ),
-});
-```
-
-Now you can use `useQuery` to fetch your data.
-
-```tsx
-import { useQuery } from "@tanstack/react-query";
-
-import "./App.css";
-
-function App() {
-  const { data } = useQuery({
-    queryKey: ["people"],
-    queryFn: () =>
-      fetch("https://swapi.dev/api/people")
-        .then((res) => res.json())
-        .then((data) => data.results as { name: string }[]),
-    initialData: [],
-  });
-
-  return (
-    <div>
-      <ul>
-        {data.map((person) => (
-          <li key={person.name}>{person.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default App;
-```
-
-You can find out everything you need to know on how to use React-Query in the [React-Query documentation](https://tanstack.com/query/latest/docs/framework/react/overview).
-
-## State Management
-
-Another common requirement for React applications is state management. There are many options for state management in React. TanStack Store provides a great starting point for your project.
-
-First you need to add TanStack Store as a dependency:
-
+### Storybook
 ```bash
-npm install @tanstack/store
-```
-
-Now let's create a simple counter in the `src/App.tsx` file as a demonstration.
-
-```tsx
-import { useStore } from "@tanstack/react-store";
-import { Store } from "@tanstack/store";
-import "./App.css";
-
-const countStore = new Store(0);
-
-function App() {
-  const count = useStore(countStore);
-  return (
-    <div>
-      <button onClick={() => countStore.setState((n) => n + 1)}>
-        Increment - {count}
-      </button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-One of the many nice features of TanStack Store is the ability to derive state from other state. That derived state will update when the base state updates.
-
-Let's check this out by doubling the count using derived state.
-
-
-\`\`\`bash
 npm run storybook
-\`\`\`
-
-const countStore = new Store(0);
-
-const doubledStore = new Derived({
-  fn: () => countStore.state * 2,
-  deps: [countStore],
-});
-doubledStore.mount();
-
-function App() {
-  const count = useStore(countStore);
-  const doubledCount = useStore(doubledStore);
-
-  return (
-    <div>
-      <button onClick={() => countStore.setState((n) => n + 1)}>
-        Increment - {count}
-      </button>
-      <div>Doubled - {doubledCount}</div>
-    </div>
-  );
-}
-
-export default App;
 ```
 
-We use the `Derived` class to create a new store that is derived from another store. The `Derived` class has a `mount` method that will start the derived store updating.
+Visualize componentes em http://localhost:6006
 
-Once we've created the derived store we can use it in the `App` component just like we would any other store using the `useStore` hook.
+##  Scripts Disponíveis
 
-You can find out everything you need to know on how to use TanStack Store in the [TanStack Store documentation](https://tanstack.com/store/latest).
+| Script | Descrição |
+|--------|-----------|
+| `npm run dev` | Inicia Vite em desenvolvimento |
+| `npm run build` | Build para produção |
+| `npm run preview` | Preview do build |
+| `npm run storybook` | Inicia Storybook |
+| `npm run build-storybook` | Build estático Storybook |
+| `npm run cypress:open` | Cypress interativo |
+| `npm run cypress:run` | Cypress headless |
 
-# Demo files
+##  Troubleshooting
 
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
+### "Não consigo fazer login"
+- Use: `user@gmail.com` / `1234`
+- Limpe o cache do navegador (Ctrl+Shift+Delete)
+- Verifique se LocalStorage está habilitado
 
-# Learn More
+### "Backend não conecta"
+- Flask rodando em `http://localhost:5000`?
+- CORS habilitado? (Flask-CORS está instalado)
+- Developer Tools (F12) → Network → procure por erros
 
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
+### "Atividades desaparecem"
+- Verifique se LocalStorage foi limpo
+- Tente modo privado/anônimo
+- Recarregue a página
+
+
+##  Contribuindo
+
+1. Fork do repositório
+2. Crie uma branch (`git checkout -b feature/nova-feature`)
+3. Commit (`git commit -m 'Adiciona nova feature'`)
+4. Push (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+##  Licença
+
+Licença ISC - veja o arquivo `LICENSE` para detalhes.
+
+##  GitHub Pages
+[Link para a landing page do projeto]
+(https://jesse-salviano.github.io/TimeWise/login.html)
+
