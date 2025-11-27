@@ -137,7 +137,7 @@ timewise/
 └── style.css
 ```
 
-```
+
 
 ##  Como Executar
 
@@ -149,20 +149,20 @@ timewise/
 ### 1. Instalar Dependências
 
 Frontend (Node.js):
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 Backend (Python):
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 2. Iniciar o Backend (Flask)
 
-\`\`\`bash
+```bash
 python app.py
-\`\`\`
+```
 
 Backend rodará em: http://localhost:5000
 
@@ -170,12 +170,12 @@ Backend rodará em: http://localhost:5000
 
 | Método | Endpoint | Descrição |
 |--------|----------|-----------|
-| GET | `/api/usuarios` | Lista todos os usuários |
-| POST | `/api/usuarios` | Cria novo usuário |
-| GET | `/api/atividades` | Lista atividades (filtrado por `usuario_id`) |
-| POST | `/api/atividades` | Cria nova atividade |
-| DELETE | `/api/atividades/<id>` | Deleta atividade |
-| GET | `/api/relatorio` | Gera relatório (filtrado por `usuario_id`) |
+| GET | `api/usuarios` | Lista todos os usuários |
+| POST | `api/usuarios` | Cria novo usuário |
+| GET | `api/atividades` | Lista atividades (filtrado por `usuario_id`) |
+| POST | `api/atividades` | Cria nova atividade |
+| DELETE | `api/atividades/<id>` | Deleta atividade |
+| GET | `api/relatorio` | Gera relatório (filtrado por `usuario_id`) |
 
 ### 3. Iniciar o Frontend
 
