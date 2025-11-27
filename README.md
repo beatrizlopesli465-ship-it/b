@@ -72,10 +72,10 @@ Frontend: HTML5 + CSS3 + JavaScript Vanilla | Backend: Python Flask | Testes: Cy
 
 ##  Estrutura do Projeto
 
-```bash
+
 ## Estrutura do Projeto
 
-```
+```bash
 timewise/
 ├── .github/workflows/
 |    ├──static.yml
