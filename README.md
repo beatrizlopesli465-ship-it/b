@@ -254,10 +254,10 @@ One of the many nice features of TanStack Store is the ability to derive state f
 
 Let's check this out by doubling the count using derived state.
 
-```tsx
-import { useStore } from "@tanstack/react-store";
-import { Store, Derived } from "@tanstack/store";
-import "./App.css";
+
+\`\`\`bash
+npm run storybook
+\`\`\`
 
 const countStore = new Store(0);
 
