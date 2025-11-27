@@ -1,4 +1,4 @@
-```javascript
+```tsx
 {
   id: number,
   nome: string,
