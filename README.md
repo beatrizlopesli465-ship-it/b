@@ -1,3 +1,11 @@
+### Paleta de Cores
+```css
+--primary-color: #00BCD4      / Cyan /
+--secondary-color: #FF4444    / Red /
+--success-color: #4CAF50      / Green /
+--warning-color: #FFD700      / Gold /
+--danger-color: #FF6B6B       / Red Light /
+```
 ### Categorias Automáticas
 Atividades são categorizadas automaticamente pelo nome:
 - Trabalho: contém "trabalho"
