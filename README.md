@@ -2,8 +2,6 @@
 
 Uma aplicação web fullstack para gerenciamento inteligente de tempo e atividades. Com interface mobile-first intuitiva, permite organizar atividades, visualizar estatísticas em tempo real e melhorar produtividade através de dicas e relatórios personalizados.
 
-Equipe
-
 ### Equipe
 - Jesse Anthony Leonel da Silva Salviano - RA: 1362319106
 - Lacielton Felix Brito - RA: 1362520591
