@@ -4,12 +4,12 @@ Uma aplicação web fullstack para gerenciamento inteligente de tempo e atividad
 
 Equipe
 
-Jessé Anthony Leonel da Silva Salviano — RA: 1362319106
-Lacielton Felix Brito — RA: 1362520591
-Lucas Vinícius de Souza Soares — RA: 1362316926
-Luan Fonseca de Lima — RA: 1362318141
-Maria Waleska Otavio dos Santos Silva — RA: 1362312498
-Victor Maximiano de Souza — RA: 1362415094
+-Jessé Anthony Leonel da Silva Salviano — RA: 1362319106
+-Lacielton Felix Brito — RA: 1362520591
+-Lucas Vinícius de Souza Soares — RA: 1362316926
+-Luan Fonseca de Lima — RA: 1362318141
+-Maria Waleska Otavio dos Santos Silva — RA: 1362312498
+-Victor Maximiano de Souza — RA: 1362415094
 
 Orientadores
 
