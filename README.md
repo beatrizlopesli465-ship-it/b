@@ -194,9 +194,9 @@ Storybook rodará em: http://localhost:6006
 ### 4. Testes
 
 ```bash
-npm run cypress:open        Cypress interativo
-npm run cypress:run         Testes em modo headless
-npm run build-storybook     Build estático do Storybook
+npm run cypress:open        #Cypress interativo
+npm run cypress:run         #Testes em modo headless
+npm run build-storybook     #Build estático do Storybook
 ```
 
 ##  Páginas da Aplicação
