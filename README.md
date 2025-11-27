@@ -1,3 +1,13 @@
+#### Endpoints da API
+
+| Método | Endpoint | Descrição |
+|--------|----------|-----------|
+| GET | `/api/usuarios` | Lista todos os usuários |
+| POST | `/api/usuarios` | Cria novo usuário |
+| GET | `/api/atividades` | Lista atividades (filtrado por `usuario_id`) |
+| POST | `/api/atividades` | Cria nova atividade |
+| DELETE | `/api/atividades/<id>` | Deleta atividade |
+| GET | `/api/relatorio` | Gera relatório (filtrado por `usuario_id`) |
 
 ```bash
 npm run storybook
