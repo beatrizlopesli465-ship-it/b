@@ -2,7 +2,7 @@
 
 Uma aplicação web fullstack para gerenciamento inteligente de tempo e atividades. Com interface mobile-first intuitiva, permite organizar atividades, visualizar estatísticas em tempo real e melhorar produtividade através de dicas e relatórios personalizados.
 
-##Equipe
+Equipe
 
 Jessé Anthony Leonel da Silva Salviano — RA: 1362319106
 Lacielton Felix Brito — RA: 1362520591
@@ -11,7 +11,7 @@ Luan Fonseca de Lima — RA: 1362318141
 Maria Waleska Otavio dos Santos Silva — RA: 1362312498
 Victor Maximiano de Souza — RA: 1362415094
 
- Orientadores
+Orientadores
 
 Frontend: HTML5 + CSS3 + JavaScript Vanilla | Backend: Python Flask | Testes: Cypress | Documentação: Storybook
 
