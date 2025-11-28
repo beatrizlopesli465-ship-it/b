@@ -1,5 +1,5 @@
 
-# AccessHub - Sistema de Gerenciamento de Acesso e Usuários
+# SGAU - Sistema de Gerenciamento de Acesso e Usuários
 
 Um sistema web robusto para gerenciamento de usuários com controle de acesso baseado em níveis de permissão (Administrador, Gerente e Usuário). Ideal para organizações que precisam manter controle seguro sobre quem acessa o sistema e quais funcionalidades cada usuário pode utilizar.
 
@@ -108,7 +108,7 @@ cd AccessHub
 - Login: `gerente`
 - Senha: `gerente`
 
-##  Estrutura de Arquivos
+## SGAU - Estrutura de Arquivos
 
 ```
 AccessHub/
