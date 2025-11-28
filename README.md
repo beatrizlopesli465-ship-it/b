@@ -90,7 +90,7 @@ cd AccessHub
 3. **Configurar a conexão com banco de dados**
    - Abra o arquivo `conexao.php`
    - Atualize as credenciais (host, usuário, senha, banco de dados):
-     ```php
+   ```
    $conexao = mysqli_connect('localhost', 'seu_usuario', 'sua_senha', 'seguranca_2', '3306');
    ```
 
