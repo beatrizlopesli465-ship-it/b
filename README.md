@@ -3,7 +3,7 @@
 
 Um sistema web robusto para gerenciamento de usuários com controle de acesso baseado em níveis de permissão (Administrador, Gerente e Usuário). Ideal para organizações que precisam manter controle seguro sobre quem acessa o sistema e quais funcionalidades cada usuário pode utilizar.
 
-## 🎯 Características Principais
+##  Características Principais
 
 - **Autenticação Segura**: Login com criptografia MD5
 - **Controle de Acesso em Três Níveis**:
@@ -15,7 +15,7 @@ Um sistema web robusto para gerenciamento de usuários com controle de acesso ba
 - **Registro de Alterações**: Log completo de todas as alterações de acesso
 - **Painel Personalizado**: Interface adaptada conforme o nível de acesso do usuário
 
-## 📋 Funcionalidades
+##  Funcionalidades
 
 ### Para Administradores
 - Adicionar novos usuários
@@ -32,7 +32,7 @@ Um sistema web robusto para gerenciamento de usuários com controle de acesso ba
 - Alterar seus dados cadastrais
 - Pesquisar informações de CNPJ
 
-## 🗄️ Estrutura do Banco de Dados
+##  Estrutura do Banco de Dados
 
 ### Tabelas Principais
 
@@ -44,30 +44,30 @@ Um sistema web robusto para gerenciamento de usuários com controle de acesso ba
 ```
 
 **nivel**
-\`\`\`
+```
 - id (INT) - Chave primária
 - descricao (VARCHAR)
-\`\`\`
+```
 
 **login**
-\`\`\`
+```
 - id (INT) - Chave primária
 - cpf (VARCHAR) - FK usuario
 - login (VARCHAR)
 - senha (VARCHAR) - Criptografada
 - nivel (INT) - FK nivel
-\`\`\`
+```
 
 **LOG**
-\`\`\`
+```
 - id (INT) - Chave primária
 - cpf (VARCHAR) - FK usuario
 - cpf_alterado (VARCHAR) - FK usuario
 - DATA (TIMESTAMP)
 - nivel_novo (INT) - FK nivel
-\`\`\`
+```
 
-## 🚀 Como Começar
+##  Como Começar
 
 ### Pré-requisitos
 - Servidor com PHP 5.6+
@@ -77,11 +77,11 @@ Um sistema web robusto para gerenciamento de usuários com controle de acesso ba
 ### Instalação
 
 1. **Clonar ou extrair o projeto**
-\`\`\`bash
+```bash
 # Se estiver em um ZIP
 unzip AccessHub.zip
 cd AccessHub
-\`\`\`
+```
 
 2. **Criar o banco de dados**
    - Abra seu cliente MySQL
@@ -90,11 +90,11 @@ cd AccessHub
 3. **Configurar a conexão com banco de dados**
    - Abra o arquivo `conexao.php`
    - Atualize as credenciais (host, usuário, senha, banco de dados):
-   \`\`\`php
+     ```php
    $conexao = mysqli_connect('localhost', 'seu_usuario', 'sua_senha', 'seguranca_2', '3306');
-   \`\`\`
+   ```
 
-4. **Acessar a aplicação**
+5. **Acessar a aplicação**
    - Coloque os arquivos na raiz do servidor web
    - Acesse `http://localhost/index.php` no navegador
 
@@ -108,9 +108,9 @@ cd AccessHub
 - Login: `gerente`
 - Senha: `gerente`
 
-## 📁 Estrutura de Arquivos
+##  Estrutura de Arquivos
 
-\`\`\`
+```
 AccessHub/
 ├── index.php                    # Página de login
 ├── login.php                    # Processamento de autenticação
@@ -134,9 +134,9 @@ AccessHub/
 ├── validaadmingerente.php      # Verificar admin/gerente
 ├── Banco de dados              # Script SQL para criar o banco
 └── LICENSE                     # Licença do projeto
-\`\`\`
+```
 
-## 🔒 Segurança
+##  Segurança
 
 - Senhas são criptografadas usando MD5
 - Sistema de sessão para manter usuários autenticados
@@ -145,14 +145,14 @@ AccessHub/
 
 **Nota Importante**: MD5 é considerado obsoleto para novos projetos. Para produção, recomenda-se migrar para `password_hash()` e `password_verify()`.
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Backend**: PHP
 - **Banco de Dados**: MySQL
 - **Frontend**: HTML, CSS
 - **Autenticação**: Sessões PHP
 
-## 📝 Fluxo Principal
+##  Fluxo Principal
 
 1. Usuário acessa `index.php`
 2. Insere credenciais (login e senha)
@@ -162,19 +162,18 @@ AccessHub/
 6. Usuário acessa funcionalidades de acordo com permissão
 7. Logout encerra a sessão
 
-## 🤝 Contribuindo
+##  Contribuindo
 
 Para melhorias ou correções, sinta-se livre para contribuir com pull requests.
 
-## 📄 Licença
+##  Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-## 📞 Suporte
+##  Suporte
 
 Para dúvidas ou problemas, entre em contato com o desenvolvedor ou abra uma issue no repositório.
 
 ---
 
 **Versão**: 1.0.0  
-**Última atualização**: Novembro 2025
