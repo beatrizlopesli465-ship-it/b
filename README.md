@@ -168,7 +168,7 @@ Para melhorias ou correções, sinta-se livre para contribuir com pull requests.
 
 ##  Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está licenciado sob a Licença GPL-2.0. Veja o arquivo `LICENSE` para mais detalhes
 
 ##  Suporte
 
