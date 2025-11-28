@@ -37,7 +37,7 @@ Um sistema web robusto para gerenciamento de usuários com controle de acesso ba
 ### Tabelas Principais
 
 **usuario**
-```
+```bash
 - nome (VARCHAR)
 - cpf (VARCHAR) - Chave primária
 - telefone (VARCHAR)
