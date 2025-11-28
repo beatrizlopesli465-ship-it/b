@@ -1,46 +1,54 @@
-# UserAccess Manager
+# Gerenciador de Usuários
 
-Um sistema simples de gerenciamento de usuários, permitindo **cadastro**, **login**, **alteração de senha** e **logout**. Ideal para estudos ou como base para aplicações maiores em PHP.
-
----
-
-## 🚀 Funcionalidades
-
-* Cadastro de novos usuários
-* Login e autenticação
-* Alteração de senha
-* Logout seguro
-* Estrutura simples para expansão
+Sistema simples de gerenciamento de usuários desenvolvido em **PHP**, permitindo **cadastro**, **login**, **listagem**, **alteração de senha** e **logout**.
+Ideal para estudos, trabalhos acadêmicos ou como base para projetos maiores.
 
 ---
 
-## 📂 Estrutura de Arquivos
+##  Estrutura do Projeto
 
 ```
-/Sistema_Cadastro-main
+Sistema_Cadastro-main/
+│── LICENSE
+│── alterarsenha.php
+│── cadastrar.php
+│── cadastro.php
+│── conexao.php
+│── index.php
+│── lista.php
+│── logado.php
 │── login.php
 │── logout.php
-│── alterarSenha.php
-│── senhaAtualizada.php
-│── LICENSE
+│── senhaatualizada.php
+│── banco de dados/
 ```
 
-*(A lista pode variar conforme seus arquivos.)*
+---
+
+##  Funcionalidades
+
+* Cadastro de novos usuários
+* Login com autenticação
+* Página protegida para usuários logados
+* Listagem de usuários
+* Alteração de senha
+* Logout
+* Conexão com banco de dados MySQL
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Usadas
 
 * **PHP**
+* **MySQL**
 * **HTML/CSS**
-* **MySQL** (se estiver usando banco de dados)
-* **Sessions** para autenticação
+* **Sessions**
 
 ---
 
-## ▶️ Como rodar o projeto
+##  Como Executar
 
-1. Instale o **XAMPP** ou **WAMP**
+1. Instale **XAMPP** ou **WAMP**
 2. Coloque o projeto dentro da pasta:
 
 ```
@@ -51,30 +59,33 @@ htdocs/
 4. Acesse no navegador:
 
 ```
-http://localhost/Sistema_Cadastro-main/login.php
+http://localhost/Sistema_Cadastro-main/index.php
 ```
 
 ---
 
-## 🧩 Configuração do Banco (opcional)
-
-Caso use banco de dados:
+##  Banco de Dados (Exemplo)
 
 ```sql
 CREATE DATABASE sistema_cadastro;
 
 CREATE TABLE usuarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(255),
-  email VARCHAR(255) UNIQUE,
-  senha VARCHAR(255)
+  nome VARCHAR(255) NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  senha VARCHAR(255) NOT NULL
 );
 ```
 
-Atualize as credenciais no arquivo de conexão conforme necessário.
+Configure as credenciais no arquivo:
+
+```
+conexao.php
+```
 
 ---
 
-## 📄 Licença
+## 📄 Licença – GPL-2.0
 
-Este projeto está licenciado sob a licença MIT.
+Este projeto é distribuído sob a **GNU General Public License v2.0 (GPL-2.0)**.
+Consulte o arquivo `LICENSE` para mais detalhes.
